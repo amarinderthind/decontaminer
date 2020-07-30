@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">  
+<head>
+<link rel="stylesheet" href="_HTML_DECO_PATH_CSS_/style1.css">
+</head>
+<div class="container">
+<header>
+<h1>DecontaMiner results</h1>
+</header>
+<nav>
+<div class="list-type1">
+<ol><li><a href="_MAIN_PAGE_PATH_">&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>     
+</ol>
+</div>  
+</nav>
+<article>
+<h1 id="one" align="left" style="color:#36486b">INFORMATION FOR SAMPLE _SAMPLE_NAME_ </h1><br>
+<h1 id="onebis" align="left" style="color:#36486b">BASIC STATISTICS</h1><br>
+<table border=1; width='500'>
+<tr><th colspan='2' bgcolor='#f2ae72' text-align='center'><b>Number of Alignments</b></th></tr>
+<tr><td>Total</td><td> _TOTAL_AL_</td></tr>
+<tr><td>Low-quality</td><td>_LOW_QUALITY_AL_</td></tr>
+<tr><td>Hi-quality</td><td>_HI_QUALITY_AL_</td></tr>
+<tr><td>Ambiguous</td><td>_AMBIGUOUS_AL_</td></tr>
+<tr><td>Valid</td><td>_VALID_AL_</td></tr>
+<tr><th colspan='2' bgcolor='#f2ae72' text-align='center'><b>Number of Reads</b></th></tr>
+<tr><td>Total</td><td>_TOTAL_RE_</td></tr>
+<tr><td>Hi-quality</td><td>_HI_QUALITY_RE_</td></tr>
+<tr><td>Valid</td><td>_VALID_RE_</td></tr>
+<tr><th colspan='2' bgcolor='#f2ae72' text-align='center'><b>Number of Organisms</b></th></tr>
+<tr><td>Total</td><td>_TOTAL_OR_</td></tr>
+<tr><td>Hi-quality</td><td>_HI_QUALITY_OR_</td></tr>
+<tr><td>Valid</td><td>_VALID_OR_</td></tr>
+<tr><td>Valid above the MC threshold </td><td>_VALID_OR_MC_</td></tr>
+</table>
+
+<script src="_HTML_DECO_PATH_JS_/D3.js"></script>
+<thind1><br><br> 
+<h1 align="left" style="color:#36486b"> DISTRIBUTION OF CONTAMINATION AMONG THE ORGANISMS </h1>
+
+<font color="#36486b"; size=+1><div id="information"></div></font>
+<h4 ><font color="#e97816"; > Hover on the image to get the match count information</h4></font>
+ 
+<style>
+circle,
+path {
+  cursor: pointer;
+}
+
+circle {
+  fill: none;
+  pointer-events: all;
+  font-size: 2.5em;
+}
+
+#tooltip { background-color: white;
+        padding: 3px 5px;
+        border: 1px solid black;
+        text-align: center;}
+
+ 
+</style>
+<button id="secpagegraph">Download Overview</button> 
+ <div id="graph"></div> 
+<script>
+
+
+var data = { _PIE_CHART_DATA_ };
+
+
+</script>
+ <script src="_HTML_DECO_PATH_JS_/individual.js"></script>
+  </thind1>
+</html>

@@ -1,0 +1,233 @@
+ div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: rgb(97, 134, 133);
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 7%;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+            
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 7%;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+thind {
+    float: left;
+    width: 95%;
+}
+thind1 {
+    float: left;
+    width: 95%;
+
+}
+
+
+.list-type1{
+width:99%;
+margin: auto;
+}
+
+.list-type1 ol{
+counter-reset: li;
+list-style: none;
+*list-style: decimal;
+/*font-size: 20px; */
+font-family: 'Raleway', sans-serif;
+padding: 0;
+margin-bottom: 4em;
+}
+.list-type1 ol ol{
+margin: 0 0 0 2em;
+}
+
+.list-type1 a{
+position: relative;
+display: block;
+padding: .4em .4em .4em 1.5em;
+*padding: .4em;
+margin: .5em 0;
+background: #618685;
+color: #000;
+text-decoration: none;
+-moz-border-radius: .3em;
+-webkit-border-radius: .3em;
+border-radius: 10em;
+transition: all .2s ease-in-out;
+}
+
+.list-type1 a:hover{
+background: #618685;
+text-decoration:none;
+transform: scale(1.1);
+}
+
+.list-type1 a:before{
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1em;
+top: 50%;
+margin-top: -1.3em;
+background:#618685;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid #fff;
+text-align: center;
+font-weight: bold;
+-moz-border-radius: 2em;
+-webkit-border-radius: 2em;
+border-radius: 2em;
+color:#FFF;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+       
+}
+
+
+body{font-family: Arial, sans-serif;font-size:15px;}
+.axis path,.axis line {fill: none;stroke:#618685;shape-rendering: crispEdges;}
+/*.tick line{fill:none;stroke:none;}*/
+.tick text{fill:black; cursor:pointer;}
+g.journal.active{cursor:pointer;}
+text.label{font-size:12px;font-weight:bold;}
+text.value{font-size:12px;font-weight:bold;}
+
+
+
+
+/* disable text selection */
+      svg *::selection {
+         background : transparent;
+      }
+     
+      svg *::-moz-selection {
+         background:transparent;
+      } 
+     
+      svg *::-webkit-selection {
+         background:transparent;
+      }
+      rect.selection {
+        stroke          : #333;
+        stroke-dasharray: 4px;
+        stroke-opacity  : 0.5;
+        fill            : transparent;
+      }
+
+      rect.cell-border {
+        stroke: #eee;
+        stroke-width:0.3px;   
+      }
+
+      rect.cell-selected {
+        stroke: rgb(51,102,153);
+        stroke-width:0.5px;   
+      }
+
+      rect.cell-hover {
+        stroke: #F00;
+        stroke-width:0.3px;   
+      }
+
+      text.mono {
+        font-size: 9pt;
+        font-family: Consolas, courier;
+        fill: #aaa;
+      }
+
+      text.text-selected {
+        fill: #000;
+      }
+
+      text.text-highlight {
+        fill: #c00;
+      }
+      text.text-hover {
+        fill: #00C;
+      }
+      #tooltip {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+      }
+
+      #tooltip.hidden {
+        display: none;
+      }
+
+      #tooltip p {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+#ballgraph {
+             
+            top: 25px;
+            left: 25px;
+            overflow-y: auto;
+            width: 100%;
+            height: 700px;
+            background-color: white;
+            border: 1px solid #AAAAAA;
+            border-radius: 4px;
+            box-shadow: inset 1px 1px 6px 2px rgba(0,0,0, .25);
+        }
+        .scroll-svg {
+
+        } 
+
+
+#chart {
+             
+            top: 25px;
+            left: 25px;
+            overflow-y: auto;
+            width: 100%;
+            height: 700px;
+            background-color: white;
+            border: 1px solid #AAAAAA;
+            border-radius: 4px;
+            box-shadow: inset 1px 1px 6px 2px rgba(0,0,0, .25);
+        }
+        .scroll-svg {
+
+        }

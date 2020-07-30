@@ -1,0 +1,44 @@
+; Decontaminer configuration file. 
+
+; Section 1: ext_soft.  Paths to the executables of external softwares.
+
+[ext_soft]
+
+; SAMTOOLS INSTALLED EXECUTABLE PATH (for samtool sort, bam2fq)
+SAMTOOLS_EXEC= /home/software/samtools-1.3.1/samtools
+
+; FASTX fastq_quality_filter EXECUTABLE PATH (for fastq_quality_filter)
+FASTX_EXEC=  /opt/software/bin/fastq_quality_filter
+
+; BLASTN INSTALLED EXECUTABLE PATH(for megablast)
+BLASTN_EXEC= /opt/software/ncbi-blast-2.2.29+/bin/blastn
+
+; SORTMERNA INSTALLED EXECUTABLE PATH 
+SORTMERNA_EXEC = /opt/software/bin/sortmerna
+
+; Section 2: cont_db.  Paths to the databases of contaminating sequences
+
+[cont_db]
+
+; HUMAN RIBOSOMAL SEQUENCES, SORTEMERNA FORMAT
+; PATH OF THE DIRECTORY CONTAINING THE FASTA FILE (.fasta) AND THE INDEXES (.idx*)
+RIBO_DB=/home/software/DECO_DB/Human_rna
+; NAME OF THE DB ([name].fasta AND INDEXES  ([name].idx*)
+RIBO_NAME=rRNA
+
+; DATABASE OF BACTERIA, BLAST FORMAT
+; PATH OF THE DIRECTORY CONTAINING THE COMPRESSED FILES
+BACTERIA_DB=/home/software/DECO_DB/Bacteria
+BACTERIA_NAME=Bacteria
+
+; DATABASE OF FUNGI, BLAST FORMAT
+; PATH OF THE DIRECTORY CONTAINING THE COMPRESSED FILES
+FUNGI_DB=/home/software/DECO_DB/Fungi
+
+FUNGI_NAME=Fungi
+
+; DATABASE OF VIRUSES, BLAST FORMAT
+; PATH OF THE DIRECTORY CONTAINING THE COMPRESSED FILES
+VIRUSES_DB=/home/software/DECO_DB/Viruses
+
+VIRUSES_NAME=Viruses

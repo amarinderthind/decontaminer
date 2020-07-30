@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">  
+<head>
+<link rel="stylesheet" href="_HTML_DECO_PATH_CSS_/style1.css">
+<script src="_HTML_DECO_PATH_JS_/D3.js"></script>
+<script>
+var grouptype = "_GROUP_SYMB_";
+var MC_thresh = "_MC_THRESH_";
+var sample_dir= "_SAMPLE_DIR_";
+</script>
+</head>
+<div class="container">
+<header>
+<h1>DecontaMiner results</h1>
+</header>
+<nav>
+<div class="list-type1">
+  <ol>
+    <li><a href="#two"> &nbsp;Overview </a></li>
+    <li><a href="#three"> &nbsp;Heatmap</a></li>
+</ol>
+</div>  
+</nav>
+<article>
+<thind>
+<h1 id="one" align="left" style="color:#36486b">BASIC STATISTICS FOR _ORGANISM_TYPE_ CONTAMINATION - GROUPING BY _GROUPING_TYPE_</h1><br>
+<table border=1; width='500'>
+<tr><th colspan='2' bgcolor='#f2ae72' text-align='center'><b>Sample information</b></th></tr>
+<tr><td>Number of sample with contamination</td><td> _TOT_PROC_SAMPLES_</td></tr>
+<tr><td>Number of sample with contamination above MC threshold </td><td>_TOT_CONT_SAMPLES_</td></tr>
+<tr><th colspan='2' bgcolor='#f2ae72' text-align='center'><b>Filtering Parameters</b></th></tr>
+<tr><td>Match Length</td><td> _MATCH_LEN_</td></tr>
+<tr><td>GAP Number</td><td>_GAP_NUM_</td></tr>
+<tr><td>Mismatch Number</td><td>_MISM_NUM_</td></tr>
+<tr><td>Match count (MC) threshold</td><td>_MC_THRESH_</td></tr>
+</table>
+</thind>
+
+<thind1><br><br><br><br>
+<h1 id="two" align="left" style="color:#36486b">OVERVIEW</h1>
+<p style="color:#e97816">Click on sample names to view the detail page <br>
+Click on organism names to read more<br>
+Hover on the dots to get the contamination details
+</p>
+
+</head>
+<script>
+var data = _OVERVIEW_DATA_ ;
+var xaxis = _OVERVIEW_XAXIS_ ; 
+</script>
+
+<script src="_HTML_DECO_PATH_JS_/overview1.js"></script>
+<button id="saveballgraph">Download Image</button> 
+<div id="ballgraph"></div>
+<div id="thind5"> </div>
+<script src="_HTML_DECO_PATH_JS_/overview2.js"></script>
+</thind1>
+
+<thind1 style="margin-top:50px" >
+<h1 id="three" style="color:#36486b">HEATMAP</h1>
+<p style="color:#e97816">Hover on the cells to get the contamination percentages </p>
+</head>
+<div id="tooltip" class="hidden">
+<p><span id="value"></p>
+</div>
+
+<button id="saveheatmap2">Download Heatmap</button>
+<div id="chart" style='overflow:auto;'></div>
+<script type="text/javascript">
+var data= _HEATMAP_DATA_ ;
+var rowLabel = _HEATMAP_ROWS_;
+var  colLabel = _HEATMAP_COLS_;
+
+
+</script>
+<script src="_HTML_DECO_PATH_JS_/heatmap.js"></script>
+</thind1>
+</article>   
+</div>
