@@ -15,7 +15,7 @@ DecontaMiner, a tool to unravel the presence of contaminating sequences among th
 if you have fasta and idx path as listed below
 
 fasta path        DB/HUMAN_RNA/rRNA.fasta
-idx path          DB/HUMAN_RNA/rRNA.idx
+###### idx path          DB/HUMAN_RNA/rRNA.idx
 
 You should mention this in configuration file in the following way 
 
