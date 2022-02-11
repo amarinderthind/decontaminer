@@ -24,6 +24,9 @@ RIBO_NAME=rRNA
 
 
 
+
+
+
 ![Image of Decontaminer PipeLine](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-019-2684-x/MediaObjects/12859_2019_2684_Fig1_HTML.png?as=webp)
 
 # Overview of the results
