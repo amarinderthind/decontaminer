@@ -12,7 +12,9 @@ DecontaMiner, a tool to unravel the presence of contaminating sequences among th
 
 
 # Main scripts
-#####  (a) decontaMiner.sh (b) filterBlastInfo.sh and (c) collectInfo.sh
+### (a) decontaMiner.sh 
+### (b) filterBlastInfo.sh and
+### (c) collectInfo.sh
 
 # some updates for database configration settings 
 
