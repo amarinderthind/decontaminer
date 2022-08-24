@@ -31,6 +31,9 @@ You should mention this in configuration file in the following way
 ##### RIBO_DB=DB/HUMAN_RNA
 ##### RIBO_NAME=rRNA
 
+# Example Bam files link for download
+https://drive.google.com/drive/u/2/folders/1B9WNJc1cGY_LIi2XGwkQ0h_9916_A8Ij 
+
 # 
 
 ![Image of Decontaminer PipeLine](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-019-2684-x/MediaObjects/12859_2019_2684_Fig1_HTML.png?as=webp)
