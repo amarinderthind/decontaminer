@@ -16,6 +16,9 @@ DecontaMiner, a tool to unravel the presence of contaminating sequences among th
 ### (b) filterBlastInfo.sh and
 ### (c) collectInfo.sh
 
+# Database download link
+https://drive.google.com/drive/u/2/folders/1UQCiuUVnS5TpkT0We2AkRVew-km_gR_u
+
 # some updates for database configration settings 
 
 if you have fasta and idx path as listed below
