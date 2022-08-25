@@ -26,7 +26,7 @@ You should mention this in configuration file in the following way
 ## Download link for example BAM files
 https://drive.google.com/drive/u/2/folders/1B9WNJc1cGY_LIi2XGwkQ0h_9916_A8Ij 
 
-## Main scripts
+## Three Main scripts to Run
 #### (a) decontaMiner.sh 
 #### (b) filterBlastInfo.sh and
 #### (c) collectInfo.sh
