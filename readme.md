@@ -10,16 +10,10 @@ Compressed folder "decontaMiner_1.4.tar.gz" contains latest version of the tool
 
 DecontaMiner, a tool to unravel the presence of contaminating sequences among the unmapped reads. It uses a subtraction approach to identify bacteria, fungi and viruses genome contamination. DecontaMiner generates several output files to track all the processed reads, and to provide a complete report of their characteristics. The good quality matches on microorganism genomes are counted and compared among samples. DecontaMiner builds an offline HTML page containing summary statistics and plots. The latter are obtained using the state-of-the-art D3 javascript libraries. DecontaMiner has been mainly used to detect contamination in human RNA-Seq data. The software is freely available at http://www-labgtp.na.icar.cnr.it/decontaminer.
 
-
-# Main scripts
-### (a) decontaMiner.sh 
-### (b) filterBlastInfo.sh and
-### (c) collectInfo.sh
-
-# Database download link
+## Database download link
 https://drive.google.com/drive/u/2/folders/1UQCiuUVnS5TpkT0We2AkRVew-km_gR_u
 
-# some updates for database configration settings 
+## some updates for database configration settings 
 
 if you have fasta and idx path as listed below
 
@@ -31,8 +25,14 @@ You should mention this in configuration file in the following way
 ##### RIBO_DB=DB/HUMAN_RNA
 ##### RIBO_NAME=rRNA
 
-# Example Bam files link for download
+## Example Bam files link for download
 https://drive.google.com/drive/u/2/folders/1B9WNJc1cGY_LIi2XGwkQ0h_9916_A8Ij 
+
+## Main scripts
+### (a) decontaMiner.sh 
+### (b) filterBlastInfo.sh and
+### (c) collectInfo.sh
+
 
 # 
 
