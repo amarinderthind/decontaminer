@@ -35,22 +35,22 @@ https://drive.google.com/drive/u/2/folders/1B9WNJc1cGY_LIi2XGwkQ0h_9916_A8Ij
 
 
 ```
-Decontaminer expects the following format:
+Decontaminer expects the following Paired end reads format:
 
 @A00121:137:HTLF3DSXX:3:1110:3097:35571/1
 @A00121:137:HTLF3DSXX:3:1110:3097:35571/2
 
-If you have the following format of PR reads, you can rename/change from following
+If you have other reads format (like below) format of PR reads, you can rename/change from 
 
 @A00121:137:HTLF3DSXX:3:1110:3097:35571 0:N: 00
 @A00121:137:HTLF3DSXX:3:1110:3097:35571 1:N: 00
 
-Then it becomes:
+To following using simple linux command (mentioned below), with this command it will be converted to the required format like below:
 
 @A00121:137:HTLF3DSXX:3:1110:3097:35571/1
 @A00121:137:HTLF3DSXX:3:1110:3097:35571/2
 
-for this case on Linux terminal
+Here is an example of Linux command 
 
 sed 's/ 0:N:0://1/g' inputfile > outputfile
 sed 's/ 1:N:0://2/g' inputfile > outputfile
