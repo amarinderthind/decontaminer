@@ -31,6 +31,30 @@ https://drive.google.com/drive/u/2/folders/1B9WNJc1cGY_LIi2XGwkQ0h_9916_A8Ij
 #### (b) filterBlastInfo.sh and
 #### (c) collectInfo.sh
 
+### Updates on Paired end reads error
+
+
+```
+Decontaminer expects the following format:
+
+@A00121:137:HTLF3DSXX:3:1110:3097:35571/1
+@A00121:137:HTLF3DSXX:3:1110:3097:35571/2
+
+If you have the following format of PR reads, you can rename/change from following
+
+@A00121:137:HTLF3DSXX:3:1110:3097:35571 0:N: 00
+@A00121:137:HTLF3DSXX:3:1110:3097:35571 1:N: 00
+
+Then it becomes:
+
+@A00121:137:HTLF3DSXX:3:1110:3097:35571/1
+@A00121:137:HTLF3DSXX:3:1110:3097:35571/2
+
+for this case on Linux terminal
+
+sed 's/ 0:N:0://1/g' inputfile > outputfile
+sed 's/ 1:N:0://2/g' inputfile > outputfile
+```
 
 ### 
 
