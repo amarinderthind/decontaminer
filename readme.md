@@ -1,4 +1,4 @@
-## Decontaminer tool : detecting unexpected contamination in unmapped NGS data
+### Decontaminer tool : detecting unexpected contamination in unmapped NGS data
 
 Our decontaminer web server is under maintenance, so we are making it available here. Please read the decontaminer publication for more details.
 
@@ -23,7 +23,7 @@ You should mention this in configuration file in the following way
 ##### RIBO_DB=DB/HUMAN_RNA
 ##### RIBO_NAME=rRNA
 
-## Example Bam files link for download
+## Download link for example BAM files
 https://drive.google.com/drive/u/2/folders/1B9WNJc1cGY_LIi2XGwkQ0h_9916_A8Ij 
 
 ## Main scripts
