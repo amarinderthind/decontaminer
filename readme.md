@@ -11,6 +11,10 @@ DecontaMiner, a tool to unravel the presence of contaminating sequences among th
 ## Database download link (Pre built)
 https://drive.google.com/drive/u/2/folders/1UQCiuUVnS5TpkT0We2AkRVew-km_gR_u
 
+## R script for o/p visualization 
+
+Please find the code here https://rpubs.com/amarinder1/deontaminer or https://github.com/amarinderthind/decontaminer/tree/master/R_decontaminer_visualizationScript
+
 ### some updates for database configration settings 
 
 if you have fasta and idx path as listed below
