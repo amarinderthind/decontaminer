@@ -1,4 +1,4 @@
-### Decontaminer tool : detecting unexpected contamination in unmapped NGS data
+### Decontaminer tool : detecting unexpected contamination in unmapped NGS data.
 
 Our decontaminer web server is under maintenance, so we are making it available here. Please read the decontaminer publication for more details.
 
